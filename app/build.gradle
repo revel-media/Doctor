@@ -5,7 +5,7 @@ android {
     defaultConfig {
         vectorDrawables.useSupportLibrary = true
         applicationId "com.example.ahmed.doctor"
-        minSdkVersion 15
+        minSdkVersion 23
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -26,5 +26,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.rodolfonavalon:ShapeRippleLibrary:1.0.0'
     implementation 'com.android.support:design:27.1.1'
+    compile project(':progressviewslib')
 }

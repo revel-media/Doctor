@@ -4,42 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_background"
+    android:background="@drawable/ic_transparent"
     android:orientation="vertical"
     tools:context=".RegistrationActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/edit_text_final"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
         android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="تسجيل مستخدم جديد"
+            android:textColor="#F9D778"/>
 
         <EditText
             android:id="@+id/edt_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp" />
+             />
 
         <EditText
             android:id="@+id/edt_mail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp" />
+             />
 
         <EditText
             android:id="@+id/edt_passw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp" />
+            />
 
         <EditText
             android:id="@+id/edt_repass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp" />
+             />
 
         <Spinner
             android:id="@+id/spn_country"
@@ -73,6 +78,7 @@
                 android:layout_weight=".5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
                 android:text="انثي"
                 android:textSize="10dp" />
 
@@ -91,6 +97,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ذكر"
+                android:textColor="@android:color/white"
                 android:layout_weight=".5"
                 android:textSize="10dp" />
 
@@ -109,6 +116,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight=".5"
+                android:textColor="@android:color/white"
                 android:text="تاريخ الميلاد"
                 android:textSize="10dp" />
 
@@ -147,6 +155,7 @@
                 android:layout_weight=".5"/>
             <TextView
                 android:layout_weight=".5"
+                android:textColor="@android:color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="10dp"
@@ -157,6 +166,7 @@
                 android:layout_height="wrap_content" />
             <TextView
                 android:layout_weight=".5"
+                android:textColor="@android:color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="10dp"
@@ -175,11 +185,15 @@
                 android:layout_width="208dp"
                 android:layout_height="45dp"
                 android:layout_marginEnd="8dp"
+                android:textColor="@android:color/white"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="4dp"
-                android:text="Button"
+                android:drawableLeft="@drawable/ic_add"
+                android:paddingRight="40dp"
+                android:paddingLeft="50dp"
+                android:text="تسجيل"
                 android:background="@drawable/button"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.502"
@@ -194,12 +208,14 @@
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
                 android:text="لديك حساب بالفعل"
+                android:textColor="@android:color/white"
                 app:layout_constraintEnd_toEndOf="@+id/register"
                 app:layout_constraintTop_toBottomOf="@+id/register" />
 
             <TextView
                 android:id="@+id/txt_login"
                 android:layout_width="wrap_content"
+                android:textColor="@android:color/white"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp"
@@ -243,7 +259,6 @@
 
         </LinearLayout>
     </LinearLayout>
-
 
 
 </RelativeLayout>

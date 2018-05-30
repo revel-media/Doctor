@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_background"
+    android:background="@drawable/ic_transparent"
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="40dp"
-        android:src="@drawable/ic_logo_login" />
+        android:layout_marginTop="40dp">
+
+        <com.rodolfonavalon.shaperipplelibrary.ShapeRipple
+            android:id="@+id/login_ripple"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            custom:ripple_stroke_width="18dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/ic_logo_login" />
+
+    </RelativeLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:background="@android:color/transparent"
         android:text=" التسجيل الدخول"
         android:textColor="#F9D778"
         android:textSize="20dp" />
@@ -32,17 +48,18 @@
         android:drawableRight="@drawable/ic_blue_mail"
         android:hint="البريد الالكتروني "
         android:paddingRight="15dp"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColorHint="@android:color/white" />
 
     <EditText
         android:id="@+id/edit_password"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginLeft="30dp"
-        android:paddingRight="15dp"
         android:layout_marginRight="30dp"
-        android:drawableRight="@drawable/ic_repass"
+        android:textColorHint="@android:color/white"  android:drawableRight="@drawable/ic_repass"
         android:hint="ادخل الرقم السري"
+        android:paddingRight="15dp"
         android:textAlignment="center" />
 
     <Button
@@ -50,6 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
         android:background="@drawable/button"
         android:drawableLeft="@drawable/ic_login"
         android:paddingLeft="50dip"
@@ -95,33 +113,35 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:weightSum="2"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
 
         <ImageView
             android:id="@+id/img_login_face"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_facebook"/>
+            android:src="@drawable/ic_facebook" />
+
 
         <ImageView
             android:id="@+id/img_login_twitter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_twitter"/>
+            android:src="@drawable/ic_twitter" />
 
         <ImageView
             android:id="@+id/img_login_link"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_link"/>
+            android:src="@drawable/ic_link" />
 
         <ImageView
             android:id="@+id/img_login_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_big_mail"/>
+            android:src="@drawable/ic_big_mail" />
 
 
     </LinearLayout>

@@ -4,42 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_background"
+    android:background="@drawable/ic_transparent"
     android:orientation="vertical"
     tools:context=".RegistrationActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/edit_text_final"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
         android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="تسجيل مستخدم جديد"
+            android:textColor="#F9D778" />
 
         <EditText
             android:id="@+id/edt_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp" />
+            android:drawableRight="@drawable/ic_user"
+            android:hint="البريد الالكتروني "
+            android:paddingRight="15dp"
+            android:textAlignment="center"
+            android:textColorHint="@android:color/white"
+            android:textSize="15dp" />
 
         <EditText
             android:id="@+id/edt_mail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp" />
+            android:drawableRight="@drawable/ic_blue_mail"
+            android:hint="البريد الالكتروني "
+            android:paddingRight="15dp"
+            android:textAlignment="center"
+            android:textColorHint="@android:color/white"
+            android:textSize="15dp" />
 
         <EditText
             android:id="@+id/edt_passw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp" />
+            android:drawableRight="@drawable/ic_password"
+            android:hint="البريد الالكتروني "
+            android:paddingRight="15dp"
+            android:textAlignment="center"
+            android:textColorHint="@android:color/white"
+            android:textSize="15dp" />
 
         <EditText
             android:id="@+id/edt_repass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp" />
+            android:drawableRight="@drawable/ic_repass"
+            android:hint="البريد الالكتروني "
+            android:paddingRight="15dp"
+            android:textAlignment="center"
+            android:textColorHint="@android:color/white"
+            android:textSize="15dp" />
 
         <Spinner
             android:id="@+id/spn_country"
@@ -81,6 +107,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight=".5"
                 android:text="تاريخ الميلاد"
+                android:textColor="@android:color/white"
                 android:textSize="10dp" />
 
             <RadioButton
@@ -100,6 +127,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight=".5"
                 android:text="ذكر"
+                android:textColor="@android:color/white"
                 android:textSize="10dp" />
 
             <RadioButton
@@ -118,6 +146,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight=".5"
                 android:text="انثي"
+                android:textColor="@android:color/white"
                 android:textSize="10dp" />
 
 
@@ -140,6 +169,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight=".5"
                 android:text="ميلادي"
+                android:textColor="@android:color/white"
                 android:textSize="10dp" />
 
             <RadioButton
@@ -152,6 +182,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight=".5"
                 android:text="هجري"
+                android:textColor="@android:color/white"
                 android:textSize="10dp" />
 
             <view
@@ -179,6 +210,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+
             <Button
                 android:id="@+id/register"
                 android:layout_width="208dp"
@@ -189,7 +221,11 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="4dp"
                 android:background="@drawable/button"
-                android:text="Button"
+                android:drawableLeft="@drawable/ic_add"
+                android:paddingLeft="50dp"
+                android:paddingRight="40dp"
+                android:text="تسجيل"
+                android:textColor="@android:color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.502"
                 app:layout_constraintStart_toStartOf="parent"
@@ -203,6 +239,7 @@
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
                 android:text="لديك حساب بالفعل"
+                android:textColor="@android:color/white"
                 app:layout_constraintEnd_toEndOf="@+id/register"
                 app:layout_constraintTop_toBottomOf="@+id/register" />
 
@@ -214,6 +251,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:text="دخول"
+                android:textColor="@android:color/white"
                 app:layout_constraintStart_toStartOf="@+id/register"
                 app:layout_constraintTop_toBottomOf="@+id/register" />
         </android.support.constraint.ConstraintLayout>
